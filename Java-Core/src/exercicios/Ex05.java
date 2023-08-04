@@ -34,6 +34,8 @@ public class Ex05 {
 		double calculoPeca2 = numPeca2 * valorPeca2;
 		double resultado = calculoPeca1 + calculoPeca2;
 		
+		
+		System.out.printf("%nCódigo da peça 1: %d%nNúmero de peças: %d%nValor Unitário: %.2f%n%nCódigo da peça 2: %d%nNúmero de peças: %d%nValor Unitário: %.2f%n%n",codPeca1,numPeca1,valorPeca1,codPeca2,numPeca2,valorPeca2);
 		System.out.printf("VALOR A PAGAR: R$ %.2f", resultado);
 		
 		
