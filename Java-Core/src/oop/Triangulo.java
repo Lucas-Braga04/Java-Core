@@ -17,10 +17,6 @@ public class Triangulo {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		
-		
-		
-		
-		
 		Triangulo x = new Triangulo();
 		x.ladoA = 3.00;
 		x.ladoB = 4.00;
