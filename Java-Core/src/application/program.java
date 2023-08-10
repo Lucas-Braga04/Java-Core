@@ -1,10 +1,16 @@
-package entities;
+package application;
 
+import java.util.Locale;
 import java.util.Scanner;
 
-public class Application {
+
+import entities.Triangle;
+
+public class program {
 	
-	public static void main() {
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
 		Scanner in = new Scanner(System.in);		
 		
 		Triangle X = new Triangle();
@@ -25,8 +31,8 @@ public class Application {
 		double areaDeX = X.area();
 		double areaDeY = Y.area();
 		
-		System.out.printf("A area do triangulo X é: %.2f",areaDeX);
-		System.out.printf("A area do triangulo X é: %.2f",areaDeY);		
+		System.out.printf("A area do triangulo X é: %.2f%n",areaDeX);
+		System.out.printf("A area do triangulo Y é: %.2f",areaDeY);		
 		
 		in.close();
 	}
