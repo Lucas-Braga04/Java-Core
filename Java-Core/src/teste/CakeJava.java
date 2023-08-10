@@ -1,4 +1,4 @@
-
+package teste;
 public class CakeJava {
 
 	String Sabor;
