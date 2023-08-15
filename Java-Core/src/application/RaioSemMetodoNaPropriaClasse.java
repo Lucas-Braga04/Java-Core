@@ -1,6 +1,6 @@
 package application;
 
-import util.*;
+import util.Calculadora;
 import java.util.Locale;
 import java.util.Scanner;
 
