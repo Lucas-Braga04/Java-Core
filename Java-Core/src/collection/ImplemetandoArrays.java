@@ -12,12 +12,14 @@ public class ImplemetandoArrays {
 		
 		//Exemplo 01 array notas de um aluno
 		
-		double notasAlunoA[] = new double [3];
+		double notasAlunoA[] = new double [4];
 		
 		//Atribuição
 		notasAlunoA[0] = 5.5;
 		notasAlunoA[1] = 4.8;
 		notasAlunoA[2] = 8.5;
+		notasAlunoA[3] = 9.5;
+		
 		
 		//Exibição
 		System.out.println(notasAlunoA);//Como array é um objeto, ele retorno um endereço de memoria ram
@@ -29,9 +31,30 @@ public class ImplemetandoArrays {
 		//Exibição por meio de metodo de classe Arrays.
 		System.out.println(Arrays.toString(notasAlunoA));
 		
+		
+		System.out.println("\n----Exibição com for----");
 		//Formas  de percorrer um array
+
+		double notas;
+		
+		for (int i = 0; i < 3; i++) {
+			notas = notasAlunoA[i];
+			notas += notasAlunoA[i];
+			//System.out.println(notas);
+			
+			//Calcular a média
+			 System.out.printf("Média das notas é: %.2f%n", notas / 3);
+		
+		}
 		
 		
+		System.out.println("\nMetodo 2");
+		
+		for(int i = 0; i < notasAlunoA.length; i++) {
+			double nota = notasAlunoA[i];
+			System.out.println(nota);
+			
+		}
 		
 		
 		
