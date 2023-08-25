@@ -7,15 +7,19 @@ public class Conta{
 	private double depositoInicial;
 	private double deposito;
 	
-	public Conta(int numberAccount, String donoDaConta, double depositoInicial, double deposito) {
-		
+	public Conta(int numberAccount, String donoDaConta, double depositoInicial) {
 		this.numberAccount = numberAccount;
 		this.donoDaConta = donoDaConta;
 		this.depositoInicial = depositoInicial;
-		this.deposito = deposito;
-		
 	}
 	
+
+
+	public Conta(int numberAccount, String donoDaConta) {
+		this.numberAccount = numberAccount;
+		this.donoDaConta = donoDaConta;
+	}
+
 	public int getNumberAccount() {
 		return numberAccount;
 	}

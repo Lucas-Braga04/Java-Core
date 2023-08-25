@@ -27,7 +27,7 @@ public class Start_Account {
 		JOptionPane.showMessageDialog(null, conta,"Dados da conta", JOptionPane.INFORMATION_MESSAGE);
 		
 		double deposito = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o valor do depósito", "Deposito em conta", JOptionPane.PLAIN_MESSAGE));
-		conta.de
+		conta.getDeposito();
 		
 		
 	}
