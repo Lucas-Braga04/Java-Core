@@ -45,11 +45,11 @@ public class Candidato {
 	}
 	public void verificacao() {
 		int age = calcularIdade();
-		int valorMulta = (age - 19) * 5;
+		int valorMulta = (age - 20) * 5;
 		if(age < 18) {
 			System.out.println("Não possui idade suficiente para o alistamento militar.");
 		}else if(age > 19 && age < 45) {
-			System.out.println("ATENÇÃO: Multa de R$" + valorMulta + ", pois encontra-se acima da idade de 19");
+			System.out.println("ATENÇÃO: Multa de R$" + valorMulta + ", pois encontra-se acima da idade isenta");
 		}
 	}
 }

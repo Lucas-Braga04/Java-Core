@@ -17,13 +17,12 @@ public class AlistamentoMilitar {
 		
 		
 		 while(inscricao.continuarCadastrando(scanner)) {
-			 System.out.println("Candidato " + (inscricao.getCandidatosRegistered() + 1) + ":");
 			 inscricao.inscricao(scanner); 
+			
 		 }
-		
-		inscricao.Exibicao();
+		 inscricao.Exibicao();
+		 scanner.close();
 	
-		scanner.close();
 	}
 
 }

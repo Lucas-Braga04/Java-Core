@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class PaginaDeInscricao {
 	
-	private Candidato[] candidatos = new Candidato[100];
+	private Candidato candidatos[] = new Candidato[100];
 	private int candidatosRegistered = 0;
 	public void inscricao(Scanner scanner) {
 		
