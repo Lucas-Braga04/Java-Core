@@ -11,7 +11,7 @@ public class Candidato {
 	private double height;
 	private double weight;
 
-	//Adição do número de cadidatos, Ex: candidato 1, candidato 2, etc...
+	//Exibição do número de cadidatos, Ex: candidato 1, candidato 2, etc...
 	 
 	
 	public Candidato(String name, int bDayYear, String nameMother, String nameFather, long cellPhone, String email,

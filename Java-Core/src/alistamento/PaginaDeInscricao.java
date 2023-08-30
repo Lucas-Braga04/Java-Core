@@ -7,8 +7,10 @@ import java.util.Scanner;
 
 public class PaginaDeInscricao {
 	
-	private Candidato[] candidatos = new Candidato[100];
-	private int candidatosRegistered = 0;
+	private Candidato[] candidatos = new Candidato[100]; // Array dos candidatos
+	private int candidatosRegistered = 0; //Contador de quantos candidatos foram cadastrados
+	
+	//Inscrição dos candidatos
 	public void inscricao(Scanner scanner) {
 		
 		NumberFormat numberFormat = NumberFormat.getInstance(Locale.US);
@@ -42,6 +44,8 @@ public class PaginaDeInscricao {
 		candidatosRegistered++;
 	}
 	
+	
+	//Formatação da altura para que aceite , ou . e faça o tratamento desse dado contendo também uma exceção para caso seja passado o dado de maneira incorreta e assim formamos um loop infinito até que retorne verdade
 	private double lerAltura(Scanner scanner, NumberFormat numberFormat) {
 	    while (true) {
 	    	numberFormat = NumberFormat.getInstance(Locale.US);
@@ -53,7 +57,7 @@ public class PaginaDeInscricao {
 	        }
 	    }
 	}
-	
+	//Formatação do peso para que aceite , ou . e faça o tratamento desse dado contendo também uma exceção para caso seja passado o dado de maneira incorreta (EX: ,. ou ,, etc...) e assim formamos um loop infinito até que retorne verdade
 	private double lerPeso(Scanner scanner, NumberFormat numberFormat) {
     	numberFormat = NumberFormat.getInstance(Locale.US);
 		while(true) {
@@ -66,6 +70,7 @@ public class PaginaDeInscricao {
 		}
 	}
 	
+	//Metodo de exibição dos candidatos
 	public void Exibicao() {
 		System.out.println("\nLista de Candidatos 2023: ");
 		for(int i = 0; i < candidatosRegistered; i++ ) {
@@ -81,6 +86,8 @@ public class PaginaDeInscricao {
 		return candidatosRegistered;
 	}
 	
+	
+	//Metodo para solicitar a pergunta de novo alistamentos gerando o loop com while
 	public boolean continuarCadastrando(Scanner scanner) {
 		 System.out.println("\nDeseja realizar o Alistamento? (S/N): ");
 		 String resposta = scanner.next();
