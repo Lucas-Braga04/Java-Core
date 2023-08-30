@@ -7,10 +7,15 @@ import java.util.Scanner;
 
 public class PaginaDeInscricao {
 	
-	private Candidato[] candidatos = new Candidato[100]; // Array dos candidatos
-	private int candidatosRegistered = 0; //Contador de quantos candidatos foram cadastrados
+
+	//private Candidato[] candidatos = new Candidato[100]; // Array dos candidatos
+	//private int candidatosRegistered = 0; //Contador de quantos candidatos foram cadastrados
 	
 	//Inscrição dos candidatos
+
+	private Candidato candidatos[] = new Candidato[100];
+	private int candidatosRegistered = 0;
+
 	public void inscricao(Scanner scanner) {
 		
 		NumberFormat numberFormat = NumberFormat.getInstance(Locale.US);
